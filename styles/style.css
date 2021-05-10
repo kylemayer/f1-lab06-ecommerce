@@ -73,3 +73,7 @@ p {
     top: 40px;                         /* vertical alignment */
     transform: translate(-10%, -50%); /* precise centering; see link below */
 }
+
+a {
+    text-decoration: none;
+}
