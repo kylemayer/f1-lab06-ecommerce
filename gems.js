@@ -47,3 +47,13 @@ const pyromorphite = {
     price: 29.00,
     cost: 8.88
 };
+
+const gems = {
+    fluorite,
+    halite,
+    crocoite,
+    malachite,
+    pyromorphite
+};
+
+export default gems;
