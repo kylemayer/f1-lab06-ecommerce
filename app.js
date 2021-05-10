@@ -1,4 +1,7 @@
 // import functions and grab DOM elements
+const halite = 
+
+
 
 // initialize state
 
