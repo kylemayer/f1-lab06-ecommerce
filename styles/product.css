@@ -1,7 +1,8 @@
 #gems {
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #gems li {
@@ -17,6 +18,7 @@
     text-align: center;
     box-shadow: 1px 1px 2px #ccc;
     transition: transform 200ms ease-in-out;
+    
 }
 
 #gems li:hover {

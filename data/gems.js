@@ -48,12 +48,12 @@ const pyromorphite = {
     cost: 8.88
 };
 
-const gems = {
+const gems = [
     fluorite,
     halite,
     crocoite,
     malachite,
     pyromorphite
-};
+];
 
 export default gems;
