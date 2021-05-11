@@ -1,4 +1,4 @@
-import gems from '../data/gems.js'
+import gems from '../data/gems.js';
 import { cartItems } from '../cart-items.js';
 
 import { findById } from '../utils.js';
@@ -13,7 +13,7 @@ export function renderCartItem(cartItem) {
     const priceTd = document.createElement('td');
     const totalTd = document.createElement('td');
 
-    nameTd.textContent = gemstones.category;
+    nameTd.textContent = gemstones.name;
     quantityTd.textContent = cartItem.quantity;
     priceTd.textContent = gemstones.price.toLocaleString('en-US', {
         style: 'currency',

@@ -4,7 +4,7 @@ export const cartItems = [
         quantity: 5,
     },
     {
-        id: 3,
+        id: 4,
         quantity: 13,
     }
 ];

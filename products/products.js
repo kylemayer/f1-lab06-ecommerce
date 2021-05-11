@@ -12,6 +12,5 @@ const ul = document.getElementById('gems');
 // for loop, 
 for (const gem of gems){
     const el = renderGem(gem);
-    console.log(el);
     ul.appendChild(el);
 }
