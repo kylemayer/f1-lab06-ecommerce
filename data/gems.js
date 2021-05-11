@@ -1,5 +1,5 @@
 const fluorite = {
-    id: 'fluorite',
+    id: 1,
     name: 'Fluorite',
     image: 'fluorite.png',
     description: 'Coming soon',
@@ -9,7 +9,7 @@ const fluorite = {
 };
 
 const halite = {
-    id: 'halite',
+    id: 2,
     name: 'Halite',
     image: 'halite.png',
     description: 'Coming soon',
@@ -19,7 +19,7 @@ const halite = {
 };
 
 const crocoite = {
-    id: 'crocoite',
+    id: 3,
     name: 'Crocoite',
     image: 'crocoite.png',
     description: 'Coming soon',
@@ -29,7 +29,7 @@ const crocoite = {
 };
 
 const malachite = {
-    id: 'malachite',
+    id: 4,
     name: 'Malachite',
     image: 'malachite.png',
     description: 'Coming soon',
@@ -39,7 +39,7 @@ const malachite = {
 };
 
 const pyromorphite = {
-    id: 'pyromorphite',
+    id: 5,
     name: 'Pyromorphite',
     image: 'pyromorphite.png',
     description: 'Coming soon',
