@@ -1,11 +1,11 @@
-import { gems } from '../data/gems.js';
+import gems from '../data/gems.js'
 import { cartItems } from '../cart-items.js';
 
 import { findById } from '../utils.js';
 
 
 export function renderCartItem(cartItem) {
-    const gemstones = findById(gemstones, cartItem.id);
+    const gemstones = findById(gems, cartItem.id);
 
     const tr = document.createElement('tr');
     const nameTd = document.createElement('td');
@@ -13,14 +13,14 @@ export function renderCartItem(cartItem) {
     const priceTd = document.createElement('td');
     const totalTd = document.createElement('td');
 
-    nameTd.textContent = gems.category;
+    nameTd.textContent = gemstones.category;
     quantityTd.textContent = cartItem.quantity;
-    priceTd.textContent = gems.price.toLocaleString('en-US', {
+    priceTd.textContent = gemstones.price.toLocaleString('en-US', {
         style: 'currency',
         currency: 'USD',
     });
 
-    const total = gems.price * cartItem.quantity;
+    const total = gemstones.price * cartItem.quantity;
 
     totalTd.textContent = total.toLocaleString('en-US', {
         style: 'currency',
@@ -35,8 +35,8 @@ export function getCartTotal() {
     let accumulator = 0;
 
     for (let item of cartItems) {
-        const gems = findById(gems, item.id);
-        const total = item.quantity * gems.price;
+        const gemstones = findById(gems, item.id);
+        const total = item.quantity * gemstones.price;
 
         accumulator = accumulator + total;
     }

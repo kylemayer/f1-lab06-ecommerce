@@ -13,7 +13,7 @@ for (let item of cartItems) {
 
 const totalPrice = getCartTotal();
 
-total.textContent - totalPrice.toLocaleString ('en-US', {
+totalPrice.textContent - totalPrice.toLocaleString ('en-US', {
     style: 'currency',
     currency: 'USD'
 });
