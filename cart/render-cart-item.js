@@ -1,7 +1,7 @@
-import { gems } from './data/gems.js';
+import { gems } from '../data/gems.js';
 import { cartItems } from '../cart-items.js';
 
-import { findByID } from '../utils.js';
+import { findById } from '../utils.js';
 
 
 export function renderCartItem(cartItem) {
