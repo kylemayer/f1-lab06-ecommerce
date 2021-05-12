@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 
-// import { findById } from '../utils.js';
+import { findById } from '../utils.js';
 // import {  getCartTotal, renderCartItem } from '../cart/render-cart-item.js';
 
 const test = QUnit.test;
