@@ -34,14 +34,6 @@ export function renderGem(gems){
         addItemToCart(gems.id);
     });
     
-    // outerDiv.append(
-    //     li,
-    //     h3,
-    //     img,
-    //     p,
-    //     button
-    // );
-
     li.appendChild(p);
     return li;
 }

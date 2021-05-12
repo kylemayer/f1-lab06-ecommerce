@@ -16,7 +16,7 @@ for (let item of cartItems) {
 
 const totalPrice = getCartTotal();
 
-total.textContent = totalPrice.toLocaleString ('en-US', {
+total.textContent = `Total: ${totalPrice.toLocaleString ('en-US', {
     style: 'currency',
     currency: 'USD'
-});
+})}`;
