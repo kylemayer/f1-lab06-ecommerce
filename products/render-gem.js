@@ -1,3 +1,5 @@
+import { addItemToCart } from '../local-storage-utils.js';
+
 
 export function renderGem(gems){
     const li = document.createElement('li'); 
@@ -20,6 +22,11 @@ export function renderGem(gems){
     button.textContent = 'Add';
     button.value = gems.id;
     p.appendChild(button);
+
+    button.addEventListener('click', () => {
+        addItemToCart(gems.id);
+
+    })
     
     li.appendChild(p);
     return li;

@@ -1,5 +1,8 @@
 import { renderCartItem, getCartTotal } from './render-cart-item.js';
-import { cartItems } from '../cart-items.js';
+
+import { getCart } from '../local-storage-utils.js';
+
+const cartItems = getCart();
 
 const anc = document.querySelector('tbody');
 const total = document.querySelector('total');
@@ -13,7 +16,7 @@ for (let item of cartItems) {
 
 const totalPrice = getCartTotal();
 
-total.textContent - totalPrice.toLocaleString ('en-US', {
+total.textContent = totalPrice.toLocaleString ('en-US', {
     style: 'currency',
     currency: 'USD'
 });
