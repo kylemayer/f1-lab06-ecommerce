@@ -2,6 +2,11 @@ import { addItemToCart } from '../local-storage-utils.js';
 
 
 export function renderGem(gems){
+
+    // const outerDiv = document.createElement('div'); 
+
+    // outerDiv.classList.add('product');
+
     const li = document.createElement('li'); 
     li.classList.add(gems.category); 
     li.title = gems.description; 
@@ -9,6 +14,7 @@ export function renderGem(gems){
     const h3 = document.createElement('h3'); 
     h3.textContent = gems.name; 
     li.appendChild(h3); 
+    
     const img = document.createElement('img'); 
     img.src = `../assets/${gems.image}`; 
     img.alt = `${gems.name} image`;
@@ -21,13 +27,21 @@ export function renderGem(gems){
     const button = document.createElement('button');
     button.textContent = 'Add';
     button.value = gems.id;
-    p.appendChild(button);
+    p.append(button);
+    
 
     button.addEventListener('click', () => {
         addItemToCart(gems.id);
-
-    })
+    });
     
+    // outerDiv.append(
+    //     li,
+    //     h3,
+    //     img,
+    //     p,
+    //     button
+    // );
+
     li.appendChild(p);
     return li;
 }

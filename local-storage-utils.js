@@ -26,7 +26,7 @@ export function setCart(myCart) {
 export function addItemToCart(productId) {
     const shopCart = getCart ();
     const shopCartItem = findById(shopCart, productId);
-
+    console.log(shopCartItem);
     if (shopCartItem) {
         shopCartItem.quantity++;
     } else {
@@ -36,7 +36,7 @@ export function addItemToCart(productId) {
         };
         shopCart.push(lineItem);
     }
-
+    setCart(shopCart);
 }
 
 
