@@ -22,16 +22,13 @@ total.textContent = `Total: ${totalPrice.toLocaleString ('en-US', {
     currency: 'USD'
 })}`;
 
-const placeButton = document.getElementById('place');
-const emptyButton = document.getElementById('empty');
+// const placeButton = document.getElementById('place');
+// const emptyButton = document.getElementById('empty');
 
-placeButton.addEventListener('click', function () {
-    console.log(placeButton);
-});
+// placeButton.addEventListener('click', function () {
+    
+// });
 
-emptyButton.addEventListener('click', function () {
-    console.log(emptyButton);
+// emptyButton.addEventListener('click', function () {
 
-
-
-});
+// });
