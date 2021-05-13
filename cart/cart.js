@@ -5,7 +5,7 @@ import { getCart } from '../local-storage-utils.js';
 const cartItems = getCart();
 
 const anc = document.querySelector('tbody');
-// const total = document.querySelector('total');
+
 
 for (let item of cartItems) {
     const tableRow = renderCartItem(item);
@@ -15,8 +15,23 @@ for (let item of cartItems) {
 }
 
 const totalPrice = getCartTotal();
+const total = document.getElementById('total');
 
 total.textContent = `Total: ${totalPrice.toLocaleString ('en-US', {
     style: 'currency',
     currency: 'USD'
 })}`;
+
+const placeButton = document.getElementById('place');
+const emptyButton = document.getElementById('empty');
+
+placeButton.addEventListener('click', function () {
+    console.log(placeButton);
+});
+
+emptyButton.addEventListener('click', function () {
+    console.log(emptyButton);
+
+
+
+});

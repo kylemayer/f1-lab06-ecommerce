@@ -1,11 +1,6 @@
 import { addItemToCart } from '../local-storage-utils.js';
 
-
 export function renderGem(gems){
-
-    // const outerDiv = document.createElement('div'); 
-
-    // outerDiv.classList.add('product');
 
     const li = document.createElement('li'); 
     li.classList.add(gems.category); 
