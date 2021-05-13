@@ -22,13 +22,13 @@ total.textContent = `Total: ${totalPrice.toLocaleString ('en-US', {
     currency: 'USD'
 })}`;
 
-// const placeButton = document.getElementById('place');
-// const emptyButton = document.getElementById('empty');
+const placeButton = document.getElementById('place');
+const emptyButton = document.getElementById('empty');
 
-// placeButton.addEventListener('click', function () {
-    
-// });
+placeButton.addEventListener('click', function () {
+    alert(`You're order has been placed! Please wait 17 weeks before arrival.`);
+});
 
-// emptyButton.addEventListener('click', function () {
+emptyButton.addEventListener('click', function () {
 
-// });
+});
