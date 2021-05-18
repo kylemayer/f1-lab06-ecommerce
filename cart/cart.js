@@ -8,13 +8,18 @@ const totalDiv = document.querySelector('#total');
 
 for (let item of cartItems) {
     const tableRow = renderCartItem(item);
-
     anc.append(tableRow);
 }
 
 const totalPrice = getCartTotal();
 
-totalDiv.textContent = totalPrice.toLocaleString ('en-US', {
+totalDiv.textContent = `Total: ${totalPrice.toLocaleString ('en-US', {
     style: 'currency',
     currency: 'USD'
+})}`;
+
+const placeButton = document.getElementById('place');
+
+placeButton.addEventListener('click', () => {
+    alert(`You're order has been placed! Please wait 17 weeks before arrival.`);
 });
