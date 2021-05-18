@@ -1,5 +1,4 @@
 import { renderCartItem, getCartTotal } from './render-cart-item.js';
-
 import { getCart } from '../local-storage-utils.js';
 
 const cartItems = getCart();
@@ -11,7 +10,6 @@ for (let item of cartItems) {
     const tableRow = renderCartItem(item);
 
     anc.append(tableRow);
-
 }
 
 const totalPrice = getCartTotal();
