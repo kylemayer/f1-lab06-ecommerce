@@ -9,7 +9,6 @@ const anc = document.querySelector('tbody');
 
 for (let item of cartItems) {
     const tableRow = renderCartItem(item);
-
     anc.append(tableRow);
 
 }
@@ -23,12 +22,7 @@ total.textContent = `Total: ${totalPrice.toLocaleString ('en-US', {
 })}`;
 
 const placeButton = document.getElementById('place');
-// const emptyButton = document.getElementById('empty');
 
-placeButton.addEventListener('click', function () {
+placeButton.addEventListener('click', () => {
     alert(`You're order has been placed! Please wait 17 weeks before arrival.`);
 });
-
-// emptyButton.addEventListener('click', function (){
-
-// });
